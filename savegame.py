@@ -6,6 +6,8 @@ from selenium.webdriver.support.expected_conditions import frame_to_be_available
 from selenium.webdriver.support.wait import WebDriverWait
 
 
+driver = Chrome()
+
 locais = ["alvo","dom","o bom"]
 
 for local in locais:
@@ -59,5 +61,5 @@ for local in locais:
     filtros 
 
      driver.switch_to.frame(0)  # select
-    driver.find_element_by_xpath('//*[@id="filterPanel"]/div[1]/div[2]/div[2]/div/button').click()  # clicar no filtro
-    driver.find_element_by_xpath( '//*[@id="filterPanel"]/div[1]/div[2]/div[2]/div/ul/li/a/label/input').click()  # Selecionar o filtro
+     driver.find_element_by_xpath('//*[@id="filterPanel"]/div[1]/div[2]/div[2]/div/button').click()  # clicar no filtro
+     driver.find_element_by_xpath( '//*[@id="filterPanel"]/div[1]/div[2]/div[2]/div/ul/li/a/label/input').click()  # Selecionar o filtro
